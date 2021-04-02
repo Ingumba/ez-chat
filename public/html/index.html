@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat App</title>
+    <link rel="stylesheet" href="/css/index.css">
+</head>
+
+<body>
+    <div class="login">
+        <label for="username">Login as: </label>
+        <select name="username" id="username" class="login_username">
+            <option value="user1" selected>User1</option>
+            <option value="user2">User2</option>
+            <option value="user3">User3</option>
+        </select>
+        <br>
+        <br>
+        <button class="login_button" onclick="login()">Login</button>
+    </div>
+
+    <div class="text_send">
+        <label for="reciever">Send to: </label>
+        <select name="reciever" id="reciever" class="text_username">
+            <option value="user1">user1</option>
+            <option value="user2">user2</option>
+            <option value="user3">user3</option>
+        </select>
+        <br>
+        <br>
+        <label for="msg">messege: </label>
+        <input type="text" name="msg" class="msg" id="msg"/>
+        <button class="send_button" onclick="send()">SEND</button>
+
+    </div>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="/js/main.js"></script>
+</body>
+
+</html>
